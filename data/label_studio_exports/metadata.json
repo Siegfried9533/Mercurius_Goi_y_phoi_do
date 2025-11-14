@@ -1,0 +1,261 @@
+[
+{
+  "image": "\/data\/upload\/1\/e08e0734-pinterest_624874517088127852.jpg",
+  "id": 1,
+  "gender": "Nữ",
+  "body_type": {
+    "choices": [
+      "Dáng quả lê",
+      "Dáng đồng hồ cát",
+      "Dáng chữ nhật",
+      "Dáng tam giác ngược"
+    ]
+  },
+  "event": {
+    "choices": [
+      "Công sở",
+      "Dự tiệc"
+    ]
+  },
+  "temperature": {
+    "choices": [
+      "Ấm",
+      "Mát"
+    ]
+  },
+  "annotator": 2,
+  "annotation_id": 1,
+  "created_at": "2025-11-05T21:49:34.439063Z",
+  "updated_at": "2025-11-05T21:49:34.439082Z",
+  "lead_time": 89.167
+},
+{
+  "image": "\/data\/upload\/1\/19cdd795-pinterest_624874517088127856.jpg",
+  "id": 2,
+  "body_type": {
+    "choices": [
+      "Dáng quả lê",
+      "Dáng chữ nhật",
+      "Dáng tam giác ngược"
+    ]
+  },
+  "gender": "Nữ",
+  "event": {
+    "choices": [
+      "Công sở",
+      "Dự tiệc"
+    ]
+  },
+  "temperature": {
+    "choices": [
+      "Ấm",
+      "Mát"
+    ]
+  },
+  "annotator": 2,
+  "annotation_id": 2,
+  "created_at": "2025-11-05T21:51:22.203600Z",
+  "updated_at": "2025-11-05T21:51:22.203616Z",
+  "lead_time": 107.358
+},
+{
+  "image": "\/data\/upload\/1\/1d618dfb-pinterest_624874517088127860.jpg",
+  "id": 3,
+  "body_type": {
+    "choices": [
+      "Dáng quả lê",
+      "Dáng chữ nhật",
+      "Dáng tam giác ngược"
+    ]
+  },
+  "gender": "Nữ",
+  "event": "Công sở",
+  "temperature": {
+    "choices": [
+      "Ấm",
+      "Mát"
+    ]
+  },
+  "annotator": 2,
+  "annotation_id": 3,
+  "created_at": "2025-11-05T21:51:40.052638Z",
+  "updated_at": "2025-11-05T21:51:40.052659Z",
+  "lead_time": 17.472
+},
+{
+  "image": "\/data\/upload\/1\/22c33350-pinterest_624874517088127863.jpg",
+  "id": 4,
+  "body_type": "Dáng đồng hồ cát",
+  "gender": "Nữ",
+  "event": {
+    "choices": [
+      "Công sở",
+      "Dự tiệc"
+    ]
+  },
+  "temperature": {
+    "choices": [
+      "Ấm",
+      "Mát"
+    ]
+  },
+  "annotator": 2,
+  "annotation_id": 4,
+  "created_at": "2025-11-05T21:52:46.517889Z",
+  "updated_at": "2025-11-05T21:52:46.517908Z",
+  "lead_time": 66.048
+},
+{
+  "image": "\/data\/upload\/1\/91d134c5-pinterest_624874517088127869.png",
+  "id": 5,
+  "body_type": {
+    "choices": [
+      "Dáng quả lê",
+      "Dáng đồng hồ cát",
+      "Dáng quả táo",
+      "Dáng chữ nhật",
+      "Dáng tam giác ngược"
+    ]
+  },
+  "gender": "Nữ",
+  "event": {
+    "choices": [
+      "Công sở",
+      "Dự tiệc"
+    ]
+  },
+  "temperature": {
+    "choices": [
+      "Mát",
+      "Lạnh"
+    ]
+  },
+  "annotator": 2,
+  "annotation_id": 5,
+  "created_at": "2025-11-05T21:53:07.325029Z",
+  "updated_at": "2025-11-05T21:53:07.325054Z",
+  "lead_time": 20.439
+},
+{
+  "image": "\/data\/upload\/1\/56d4f60d-pinterest_624874517088127878.jpg",
+  "id": 6,
+  "body_type": {
+    "choices": [
+      "Dáng quả lê",
+      "Dáng chữ nhật",
+      "Dáng tam giác ngược"
+    ]
+  },
+  "gender": "Nữ",
+  "event": "Công sở",
+  "temperature": {
+    "choices": [
+      "Ấm",
+      "Mát"
+    ]
+  },
+  "annotator": 2,
+  "annotation_id": 6,
+  "created_at": "2025-11-05T21:53:19.601615Z",
+  "updated_at": "2025-11-05T21:53:19.601637Z",
+  "lead_time": 11.854
+},
+{
+  "image": "\/data\/upload\/1\/874ffe12-pinterest_624874517088127887.jpg",
+  "id": 7,
+  "body_type": {
+    "choices": [
+      "Dáng quả lê",
+      "Dáng chữ nhật",
+      "Dáng tam giác ngược"
+    ]
+  },
+  "gender": "Nữ",
+  "event": "Công sở",
+  "temperature": {
+    "choices": [
+      "Ấm",
+      "Mát"
+    ]
+  },
+  "annotator": 2,
+  "annotation_id": 7,
+  "created_at": "2025-11-05T21:53:42.436760Z",
+  "updated_at": "2025-11-05T21:53:42.436775Z",
+  "lead_time": 22.461
+},
+{
+  "image": "\/data\/upload\/1\/4c9000c4-pinterest_624874517088127888.webp",
+  "id": 8,
+  "body_type": {
+    "choices": [
+      "Dáng quả lê",
+      "Dáng chữ nhật",
+      "Dáng tam giác ngược"
+    ]
+  },
+  "gender": "Nữ",
+  "event": "Công sở",
+  "temperature": {
+    "choices": [
+      "Ấm",
+      "Mát"
+    ]
+  },
+  "annotator": 2,
+  "annotation_id": 8,
+  "created_at": "2025-11-05T21:54:04.208260Z",
+  "updated_at": "2025-11-05T21:54:04.208279Z",
+  "lead_time": 21.351
+},
+{
+  "image": "\/data\/upload\/1\/ebe74323-pinterest_624874517088127892.jpg",
+  "id": 9,
+  "body_type": {
+    "choices": [
+      "Dáng quả lê",
+      "Dáng chữ nhật",
+      "Dáng tam giác ngược"
+    ]
+  },
+  "gender": "Nữ",
+  "event": "Công sở",
+  "temperature": {
+    "choices": [
+      "Ấm",
+      "Mát"
+    ]
+  },
+  "annotator": 2,
+  "annotation_id": 9,
+  "created_at": "2025-11-05T21:54:22.016782Z",
+  "updated_at": "2025-11-05T21:54:22.016802Z",
+  "lead_time": 17.419
+},
+{
+  "image": "\/data\/upload\/1\/3fb95b70-pinterest_624874517088127897.jpg",
+  "id": 10,
+  "body_type": {
+    "choices": [
+      "Dáng quả lê",
+      "Dáng đồng hồ cát",
+      "Dáng quả táo",
+      "Dáng chữ nhật",
+      "Dáng tam giác ngược"
+    ]
+  },
+  "gender": "Nữ",
+  "event": "Công sở",
+  "temperature": {
+    "choices": [
+      "Mát",
+      "Lạnh"
+    ]
+  },
+  "annotator": 2,
+  "annotation_id": 10,
+  "created_at": "2025-11-05T21:54:39.375856Z",
+  "updated_at": "2025-11-05T21:54:39.375880Z",
+  "lead_time": 16.973
+}
+]

@@ -1,18 +1,21 @@
+# 1. Các thư viện tính toán cốt lõi
+numpy==1.26.4 
+torch
+torchvision
+tensorboard
+
+# 2. Thư viện Tìm kiếm & AI
+faiss-cpu
+sentence-transformers
+
+# 3. Thư viện Web API
 fastapi
 uvicorn[standard]
+requests
 
-sentence-transformers
-faiss-cpu
-torch
-numpy
-
+# 4. Tiện ích & Xử lý ảnh
 Pillow
 tqdm
 opencv-python
-cython 
-
-requests
-
-Pytorch 
-torchvision
-tensorboard
+cython
+multiparts

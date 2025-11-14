@@ -8,10 +8,14 @@ from sentence_transformers import SentenceTransformer
 import torch
 from typing import List, Dict, Any, Optional
 from PIL import Image
+from pathlib import Path
 import io
 
-METADATA_FILE = "../assets/metadata_api.json"
-FAISS_INDEX_FILE = "../assets/faiss_index.index"
+BASE_DIR = Path(__file__).resolve().parent.parent 
+
+# --- (2) TẠO ĐƯỜNG DẪN TÀI SẢN (ASSETS) ---
+METADATA_FILE = BASE_DIR / "assets" / "metadata_api.json"
+FAISS_INDEX_FILE = BASE_DIR / "assets" / "faiss_index.index"
 MODEL_NAME = 'clip-ViT-B-32-multilingual-v1'
 
 #Ngưỡng đánh giá
@@ -83,6 +87,7 @@ def encode_text(text: str) -> np.ndarray:
 
 def encode_image(image: Image.Image) -> np.ndarray:
     """Vector hóa hình ảnh và chuẩn hóa L2."""
+    print("--- !!! ĐANG CHẠY HÀM ENCODE_IMAGE PHIÊN BẢN MỚI NHẤT (v5) !!! ---")
     clip_model = model_cache['clip_model']
 
     query_vector = clip_model.encode(image, device=device, convert_to_tensor=True)
@@ -120,14 +125,14 @@ def load_models():
     
     print("Đang tải FAISS index...")
     try:
-        model_cache['faiss_index'] = faiss.read_index(FAISS_INDEX_FILE)
+        model_cache['faiss_index'] = faiss.read_index(str(FAISS_INDEX_FILE))
         print(f"Tải FAISS index thành công. Tổng số vector: {model_cache['faiss_index'].ntotal}")
     except Exception as e:
         print(f"LỖI NGHIÊM TRỌNG: Không thể load file {FAISS_INDEX_FILE}. Lỗi: {e}")
     
     print("Đang tải file Metadata...")
     try:
-        with open(METADATA_FILE, 'r', encoding='utf-8') as f:
+        with open(str(METADATA_FILE), 'r', encoding='utf-8') as f:
             model_cache['metadata'] = json.load(f)
         print(f"Tải metadata thành công. {len(model_cache['metadata'])} bản ghi.")
     except Exception as e:
@@ -243,8 +248,8 @@ async def assess_style(file: UploadFile = File(..., description="Ảnh outfit ng
     try:
         # Đọc ảnh người dùng
         contents = await file.read()
-        user_image = Image.open(io.BytesIO(contents))
-        
+        user_image_raw = Image.open(io.BytesIO(contents))
+        user_image = user_image_raw.convert("RGB")  # Đảm bảo ảnh ở định dạng RGB
         # Vector hóa ảnh (SỬA LỖI: đã bao gồm chuẩn hóa L2)
         query_vector_np = encode_image(user_image)
         
